@@ -1,4 +1,4 @@
-
+/*
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -26,8 +26,8 @@ public class BombCoverage {
 		int remainder;	//남은 지역 수
 		
 		try {
-			in = new BufferedReader(new FileReader("input.txt"));
-			out = new FileWriter("output.txt");
+			in = new BufferedReader(new FileReader("BombCoverageFiles/input.txt"));
+			out = new FileWriter("BombCoverageFiles/output.txt");
 			
 			testNumber = Integer.valueOf(in.readLine());
 			for(k=0;k<testNumber;k++) {
@@ -178,3 +178,4 @@ class Bomb{
 		return remainder;
 	}
 }
+*/
