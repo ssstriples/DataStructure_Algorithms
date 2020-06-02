@@ -19,3 +19,7 @@ SWTest/CodegroundNote/DataStructure/DataStructure/Debug/
 *.user
 SWTest/CodegroundNote/DataStructure/Debug/DataStructure.ilk
 *.pdb
+/.metadata/
+SWTest/.gitignore
+SWTest/JAVAUtilModules/.gitignore
+SWTest/LGSoftwareTest/.gitignore
