@@ -1,20 +1,6 @@
-a = 7
-b = 3
+a = [1, 2, 3, 4, 5, 5, 5]
+remove_set = {3, 5} # 집합 자료형
 
-# 나누기
-print(a / b)
-
-# 나머지
-print(a % b)
-
-# 몫
-print(a // b)
-
-a = 5
-b = 3
-
-# 거듭 제곱
-print(a ** b)
-
-# 제곱근
-print(a ** 0.5)
+# remove_set에 포함되지 않은 값만을 저장
+result = [i for i in a if i not in remove_set]
+print(result)
