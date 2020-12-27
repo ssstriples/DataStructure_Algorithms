@@ -1,6 +1,14 @@
-a = [1, 2, 3, 4, 5, 5, 5]
-remove_set = {3, 5} # 집합 자료형
+data = set([1, 2, 3])
+print(data)
 
-# remove_set에 포함되지 않은 값만을 저장
-result = [i for i in a if i not in remove_set]
-print(result)
+# 새로운 원소 추가
+data.add(4)
+print(data)
+
+# 새로운 원소 여러 개 추가
+data.update([5, 6])
+print(data)
+
+# 특정한 값을 갖는 원소 삭제
+data.remove(3)
+print(data)
