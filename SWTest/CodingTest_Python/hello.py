@@ -1,14 +1,14 @@
-data = set([1, 2, 3])
-print(data)
+# 출력할 변수들
+a = 1
+b = 2
+print(a, b)
+print(7, end=" ")
+print(8, end=" ")
 
-# 새로운 원소 추가
-data.add(4)
-print(data)
+# 출력할 변수
+answer = 7
+print("정답은 " + str(answer) + "입니다.")
 
-# 새로운 원소 여러 개 추가
-data.update([5, 6])
-print(data)
-
-# 특정한 값을 갖는 원소 삭제
-data.remove(3)
-print(data)
+# f-string
+answer = 7
+print(f"정답은 {answer}입니다.")
