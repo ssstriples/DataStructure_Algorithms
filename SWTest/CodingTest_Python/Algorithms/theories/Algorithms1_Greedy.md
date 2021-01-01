@@ -10,10 +10,10 @@
 - [문제 상황] 루트 노드부터 시작하여 거쳐 가는 노드 값의 합을 최대로 만들고 싶습니다.
   - Q. 최적의 해는 무엇인가요?
 
-  <img src="./images/Greedy1.PNG" width="450px" height="100%" title="Greedy1" alt="Greedy1"></img><br/>
+  <img src="../images/Greedy1.PNG" width="450px" height="100%" title="Greedy1" alt="Greedy1"></img><br/>
   - Q. 단순히 매 상황에서 가장 큰 값만 고른다면 어떻게 될까요?
 
-  <img src="./images/Greedy2.PNG" width="450px" height="100%" title="Greedy2" alt="Greedy2"></img><br/>
+  <img src="../images/Greedy2.PNG" width="450px" height="100%" title="Greedy2" alt="Greedy2"></img><br/>
 
 - 일반적인 상황에서 그리디 알고리즘은 최적의 해를 보장할 수 없을 때가 많습니다.
 - 하지만 코딩 테스트에서의 대부분의 그리디 문제는 **탐욕법으로 얻은 해가 최적의 해가 되는 상황에서, 이를 추론**할 수 있어야 풀리도록 출제됩니다.
@@ -71,14 +71,14 @@ print(count)
 
 - N과 K가 주어질 때 N이 1이 될 때까지 1번 혹은 2번의 과정을 수행해야 하는 최소 횟수를 구하는 프로그램을 작성하세요.
 #### [문제 조건]
-<img src="./images/Greedy_Problem1.PNG" width="100%" height="100%"></img><br/>
+<img src="../images/Greedy_Problem1.PNG" width="100%" height="100%"></img><br/>
 
 #### [아이디어]
 - 주어진 **N에 대하여 최대한 많이 나누기를 수행**하면 됩니다.
 - N의 값을 줄일 때 **2 이상의 수로 나누는 작업이 1을 빼는 작업**보다 수를 훨씬 많이 줄일 수 있습니다.
 - 예를 들어 N = 25, K = 3일 때는 다음과 같습니다.
   
-  <img src="./images/Greedy_Problem1_1.PNG" width="1990%" height="100%"></img><br/>
+  <img src="../images/Greedy_Problem1_1.PNG" width="1990%" height="100%"></img><br/>
 
 #### [정당성 분석]
 - **가능하면 최대한 많이 나누는 작업**이 최적의 해를 항상 보장할 수 있을까요?
@@ -141,7 +141,7 @@ print(cnt)
 - 예를 들어 02984라는 문자로 만들 수 있는 가장 큰 수는 ((((0 + 2) x 9) x 8) x 4) = 576입니다. 또한 만들어질 수 있는 가장 큰 수는 항상 20억 이하의 정수가 되도록 입력이 주어집니다.
 
 #### [문제 조건]
-<img src="./images/Greedy_Problem2.PNG" width="100%" height="100%"></img><br/>
+<img src="../images/Greedy_Problem2.PNG" width="100%" height="100%"></img><br/>
 
 #### [아이디어]
 - 대부분의 경우 '+'보다는 'x'가 더 값을 크게 만듭니다.
@@ -187,13 +187,13 @@ print(result)
 - 또한 몇 명의 모험가는 마을에 그대로 남아 있어도 되기 때문에, 모든 모험가를 특정한 그룹에 넣을 필요는 없습니다.
 
 #### [문제 조건]
-<img src="./images/Greedy_Problem3.PNG" width="100%" height="100%"></img><br/>
+<img src="../images/Greedy_Problem3.PNG" width="100%" height="100%"></img><br/>
 
 #### [아이디어]
 - 오름차순 정렬 이후에 공포도가 가장 낮은 모험가부터 하나씩 확인합니다.
-  <img src="./images/Greedy_Problem3_1.PNG" width="1990%" height="100%"></img><br/>
+  <img src="../images/Greedy_Problem3_1.PNG" width="1990%" height="100%"></img><br/>
 - 앞에서부터 공포도를 하나씩 확인하면 **'현재 그룹에 포함된 모험가의 수'가 '현재 확인하고 있는 공포도'보다 크거나 같다면 이를 그룹으로 설정**하면 됩니다.
-  <img src="./images/Greedy_Problem3_2.PNG" width="1990%" height="100%"></img><br/>
+  <img src="../images/Greedy_Problem3_2.PNG" width="1990%" height="100%"></img><br/>
 - 이러한 방법을 이용하면 **공포도가 오름차순으로 정렬**되어 있다는 점에서, **항상 최소한의 모험가의 수만 포함하여 그룹을 결성**하게 됩니다.
 
 #### [정당성 분석]
