@@ -17,7 +17,6 @@ for i in range(n):
     stack.append(array[i])
 print(sum)
 
-
 # Timeout 시간 복잡도 O(N^2) -> N이 80,000 이하이므로 시간 초과 발생!!
 # tb = [0] * n
 # for i in range(n):
