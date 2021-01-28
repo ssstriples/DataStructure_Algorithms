@@ -12,28 +12,28 @@
 ### 1.3.1 예시
 - 예를 들어, 직원 수 N=7명이고 시작 직원 번호 S=1번이며 M은 4라고 할 경우, 장기 자랑 순서는 아래 표와 같다.
 
-<img src="https://github.com/ssstriples/DataStructure_Algorithms/blob/AlgoDS/SWTest/LGSoftwareTest/image/TS1.PNG" width="10%" height="10%"></img>
+<img src="../image/TS1.PNG" width="10%" height="10%"></img>
 |장기자랑순서|1|2|3|4|5|6|7|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |직원 번호   |4|1|6|5|7|3|2|
 
 - 자세히 설명하면, 1번 직원부터 세어서 4번째 직원인 4번 직원이 선택된다.
 
-<img src="https://github.com/ssstriples/DataStructure_Algorithms/blob/AlgoDS/SWTest/LGSoftwareTest/image/TS2.PNG" width="10%" height="10%"></img>
+<img src="../image/TS2.PNG" width="10%" height="10%"></img>
 |장기자랑순서|1|2|3|4|5|6|7|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |직원 번호   |4|||||||
 
 - 두 번째 순서는 장기자랑을 한 4번 직원의 다음 직원인 5번 직원부터 센다.
 
-<img src="https://github.com/ssstriples/DataStructure_Algorithms/blob/AlgoDS/SWTest/LGSoftwareTest/image/TS3.PNG" width="10%" height="10%"></img>
+<img src="../image/TS3.PNG" width="10%" height="10%"></img>
 |장기자랑순서|1|2|3|4|5|6|7|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |직원 번호   |4|1||||||
 
 - 세 번째 순서는 장기자랑을 한 1번 직원의 다음 직원인 2번 직원부터 센다.
 
-<img src="https://github.com/ssstriples/DataStructure_Algorithms/blob/AlgoDS/SWTest/LGSoftwareTest/image/TS4.PNG" width="10%" height="10%"></img>
+<img src="../image/TS4.PNG" width="10%" height="10%"></img>
 |장기자랑순서|1|2|3|4|5|6|7|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |직원 번호   |4|1|6|||||
