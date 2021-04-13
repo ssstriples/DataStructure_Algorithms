@@ -51,6 +51,58 @@
 ## 8.4 Code
 <pre>
 <code>
+import sys
+from collections import deque
+sys.setrecursionlimit(10**4)
+read = sys.stdin.readline
 
+INF = 987654321
+dir = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+N, M = map(int, read().split())
+board = []
+
+for _ in range(N):
+    board.append(list(map(int, read().split())))
+
+def dfs(i, j):
+    board[i][j] = 2
+    for di, dj in dir:
+        ni, nj = i + di, j + dj
+        if 0 <= ni < N and 0 <= nj < M and board[ni][nj] == 1:
+            dfs(ni, nj)
+
+def bfs(si, sj):
+    dist = [[INF for _ in range(M)] for _ in range(N)]
+    dist[si][sj] = 0
+    queue = deque()
+    queue.append([si, sj])
+    
+    while queue:
+        i, j = queue.popleft()
+        if board[i][j] == 1:
+            return dist[i][j]-1
+        for di, dj in dir:
+            ni, nj = i + di, j + dj
+            if 0 <= ni < N and 0 <= nj < M and board[ni][nj] != 2 and dist[ni][nj] > dist[i][j]+1:
+                dist[ni][nj] = dist[i][j] + 1
+                queue.append([ni, nj])
+    return INF
+
+flag = False
+for i in range(N):
+    for j in range(M):
+        if board[i][j] == 1:
+            dfs(i, j)
+            flag = True
+            break
+    if flag: break
+
+ans = INF
+for i in range(N):
+    for j in range(M):
+        if board[i][j] == 2:
+            ans = min(ans, bfs(i, j))
+
+print(ans)
 </code>
 </pre>
